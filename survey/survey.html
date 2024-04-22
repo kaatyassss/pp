@@ -39,7 +39,7 @@
     </div>
 </nav>
 
-<div class="survey">
+<div class="survey" id="form">
     <div class="greeting">
         <h4>
             <b>Откройте дверь к индивидуальному уходу!</b><br>
@@ -58,15 +58,15 @@
                 <h4>Какое средство вы хотите найти?</h4>
                 <form>
                     <div class="form-group">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            Выберите средство
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Средство 1</a></li>
-                            <li><a class="dropdown-item" href="#">Средство 2</a></li>
-                            <li><a class="dropdown-item" href="#">Средство 3</a></li>
-                        </ul>
+                        <select name="care-product" id="care-product">
+                            <option value="">Выберите средство</option>
+                            <option value="Средство 1">Средство 1</option>
+                            <option value="Средство 2">Средство 2</option>
+                            <option value="Средство 3">Средство 3</option>
+                            <option value="Средство 4">Средство 4</option>
+                            <option value="Средство 5">Средство 5</option>
+                            <option value="Средство 6">Средство 6</option>
+                        </select>
                     </div>
                 </form>
             </div>
@@ -79,15 +79,15 @@
                 <h4>Давайте уточним..?</h4>
                 <form>
                     <div class="form-group">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            Выберите средство
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item" href="#">Средство 1</a></li>
-                            <li><a class="dropdown-item" href="#">Средство 2</a></li>
-                            <li><a class="dropdown-item" href="#">Средство 3</a></li>
-                        </ul>
+                        <select name="product-detail" id="product-detail">
+                            <option value="">Выберите средство</option>
+                            <option value="Средство 1">Средство 1</option>
+                            <option value="Средство 2">Средство 2</option>
+                            <option value="Средство 3">Средство 3</option>
+                            <option value="Средство 4">Средство 4</option>
+                            <option value="Средство 5">Средство 5</option>
+                            <option value="Средство 6">Средство 6</option>
+                        </select>
                     </div>
                 </form>
             </div>
@@ -104,7 +104,7 @@
             </div>
             <div class="col align-self-center">
                 <h4>Какой у вас тип кожи?</h4>
-                <form>
+                <form id="rates">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                         <label class="form-check-label" for="flexRadioDefault1">
@@ -119,13 +119,13 @@
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault3">
                             Комбмнированная
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault4">
                             Жирная
                         </label>
                     </div>
@@ -140,26 +140,26 @@
                 <h4>Как часто у вас появляются акне/прыщи?</h4>
                 <form class="textOnRight">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5" checked>
+                        <label class="form-check-label" for="flexRadioDefault5">
                             Каждый день
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault6">
+                        <label class="form-check-label" for="flexRadioDefault6">
                             1 раз в неделю
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault7">
+                        <label class="form-check-label" for="flexRadioDefault7">
                             1 раз в месяц
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault8">
+                        <label class="form-check-label" for="flexRadioDefault8">
                             Реже, чем 1 раз в месяц
                         </label>
                     </div>
@@ -180,20 +180,20 @@
                 <h4>Насколько чувствительна ваша кожа?</h4>
                 <form>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9" checked>
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault9" checked>
+                        <label class="form-check-label" for="flexRadioDefault9">
                             Очень чувствительна
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault10">
+                        <label class="form-check-label" for="flexRadioDefault10">
                             Чувствительна
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault11">
+                        <label class="form-check-label" for="flexRadioDefault11">
                             Не чувствительна
                         </label>
                     </div>
@@ -209,20 +209,20 @@
                 <h4>В каком ценовом сегменте подобрать средство?</h4>
                 <form class="textOnRight">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12" checked>
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault12" checked>
+                        <label class="form-check-label" for="flexRadioDefault12">
                             до 1000 рублей
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault13">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault13">
+                        <label class="form-check-label" for="flexRadioDefault13">
                             1000-5000 рублей
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault14">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault14">
+                        <label class="form-check-label" for="flexRadioDefault14">
                             выше 5000 рублей
                         </label>
                     </div>
@@ -240,7 +240,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <a href="http://localhost:63342/beauty-sos/result-page/result.html?_ijt=5c6q5akst61eqeksdk1gj9igbu&_ij_reload=RELOAD_ON_SAVE"><button class="btn" id="btn1">Получить результат!</button></a>
+                            <button class="btn" type="submit" id="btn1">Получить результат!</button></a>
                         </div>
                     </div>
                     <div class="row">
@@ -276,6 +276,8 @@
         </div>
     </footer>
 </div>
+
+<script src="survey.js"></script>
 </body>
 
 </html>
